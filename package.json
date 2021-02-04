@@ -1,0 +1,22 @@
+{
+  "name": "guilhotnatthan_3_28012021",
+  "version": "1.0.0",
+  "description": "projet3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natthanguilhot/GUILHOTNATTHAN_3_28012021.git"
+  },
+  "author": "Natthan",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/natthanguilhot/GUILHOTNATTHAN_3_28012021/issues"
+  },
+  "homepage": "https://github.com/natthanguilhot/GUILHOTNATTHAN_3_28012021#readme",
+  "dependencies": {}
+}
