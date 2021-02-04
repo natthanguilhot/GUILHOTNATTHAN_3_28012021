@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/prefixed/style.css">
+    <!-- <link rel="stylesheet" href="css/prefixed/style.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4c8c8f50d.js" crossorigin="anonymous"></script>
     <title>Oh My Food</title>
 </head>
 <body>
-    <header>
-        <img src="./Documentation/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo oh my food" class=>
+    <header class="header">
+        <a href="index.html" class="header__lien">
+        <img src="./Documentation/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo oh my food" class="header__lien__logo">
+        </a>
     </header>
+
+    <section class="search">
+        <i class="fas fa-map-marker-alt search__logo"></i>
+        <input type="text" id="ville" name="Ville" value="Paris, Belleville" class="search__input">
+    </section>
+
+    <section class="pres">
+        <div  class="pres__container">
+            <h2 class="pres__container__titre">Réservez le menu qui vous convient</h2>
+            <p class="pres__container__description">Découvrez des restaurants d'execption, sélectionnés par nos soins.</p>
+            <button class="pres__container__bouton">Explorer nos restaurants</button>
+        </div>
+    </section>
 </body>
 </html>
