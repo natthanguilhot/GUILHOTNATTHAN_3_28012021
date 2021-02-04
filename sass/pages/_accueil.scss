@@ -44,6 +44,10 @@
             background: linear-gradient(to top left, $primary-color, $secondary-color);
             color: white;
             border: none;
+            cursor: pointer;
+            &:active {
+                background: linear-gradient(to top left, darken($primary-color, 10), darken($secondary-color, 10));
+            }
         }
     }
 }
