@@ -23,7 +23,7 @@
     text-align: center;
     background-color: rgb(238, 238, 238);
     &__container {
-        width: 69%;
+        width: 78%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -39,16 +39,56 @@
         &__bouton {
             margin-top: 1.5rem;
             margin-bottom: 3rem;
-            height: 2.5rem;
+            height: 3rem;
+            font-size: 0.9rem;
             width: 70%;
             border-radius: 5rem;
             background: linear-gradient(to top left, $primary-color, $secondary-color);
             color: white;
             border: none;
             cursor: pointer;
+            box-shadow: 1px 1px 5px gray;
             &:active {
                 background: linear-gradient(to top left, darken($primary-color, 10), darken($secondary-color, 10));
             }
+        }
+    }
+}
+.fonctionnement {
+    &__titre {
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+    &__carte {
+        display: flex;
+        margin: auto;
+        width: 90%;
+        height: 4.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        background-color: rgb(238, 238, 238);
+        align-items: center;
+        box-shadow: 1px 2px 15px rgb(211, 211, 211);
+        &__numéro {
+            background-color: $primary-color;
+            color: white;
+            width: 1.5em;
+            height: 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -0.7rem;
+        }
+        &__icone {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            color: rgb(124, 124, 124);
+            font-size: 1.2rem;
+        }
+        &__description {
+
         }
     }
 }
