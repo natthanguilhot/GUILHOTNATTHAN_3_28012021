@@ -13,13 +13,13 @@
 <body>
     <header class="header">
         <a href="index.html" class="header__lien">
-        <img src="./Documentation/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo oh my food" class="header__lien__logo">
+        <h1 class="header__titre">ohmyfood</h1>
         </a>
     </header>
 
     <section class="search">
         <i class="fas fa-map-marker-alt search__logo"></i>
-        <input type="text" id="ville" name="Ville" value="Paris, Belleville" class="search__input">
+        <p class="search__texte">Paris, Belleville</p>
     </section>
 
     <section class="pres">
@@ -42,5 +42,68 @@
             <p class="fonctionnement__carte__numéro">3</p><i class="fas fa-store fonctionnement__carte__icone"></i><p class="fonctionnement__carte__description">Dégustez au restaurant</p>
         </div>
     </section>
+
+    <section class="restaurants">
+        <h2 class="restaurants__titre">Restaurants</h2>
+        <a href="">
+            <div class="restaurants__carte">
+                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/palette.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
+                <div class="restaurants__carte__description">
+                    <div class="restaurants__carte__description__texte">
+                        <h3 class="restaurants__carte__description__texte__titre">La palette du goût</h3>
+                        <p class="restaurants__carte__description__texte__place">Ménilmontant</p>
+                    </div>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                </div>
+                <p class="restaurants__carte__nouveau">Nouveau</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="restaurants__carte">
+                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/note.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
+                <div class="restaurants__carte__description">
+                    <div class="restaurants__carte__description__texte">
+                        <h3 class="restaurants__carte__description__texte__titre">La note enchantée</h3>
+                        <p class="restaurants__carte__description__texte__place">Charonne</p>
+                    </div>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                </div>
+                <p class="restaurants__carte__nouveau">Nouveau</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="restaurants__carte">
+                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/francaise.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
+                <div class="restaurants__carte__description">
+                    <div class="restaurants__carte__description__texte">
+                        <h3 class="restaurants__carte__description__texte__titre">A la française</h3>
+                        <p class="restaurants__carte__description__texte__place">Cité Rouge</p>
+                    </div>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="restaurants__carte">
+                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/délice.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
+                <div class="restaurants__carte__description">
+                    <div class="restaurants__carte__description__texte">
+                        <h3 class="restaurants__carte__description__texte__titre">Les délices des sens</h3>
+                        <p class="restaurants__carte__description__texte__place">Folie-Méricourt</p>
+                    </div>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                </div>
+            </div>
+        </a>
+    </section>
+    <footer class="footer">
+        <h2 class="footer__titre">ohmyfood</h2>
+        <ul class="footer__ul">
+            <li class="footer__ul__li"><i class="fas fa-utensils footer__ul__li__icone"></i>Proposer un restaurant</li>
+            <li class="footer__ul__li"><i class="fas fa-hands-helping footer__ul__li__icone"></i>Devenir partenaire</li>
+            <li class="footer__ul__li">Mentions légales</li>
+            <li class="footer__ul__li">Contact</li>
+        </ul>
+    </footer>
 </body>
 </html>

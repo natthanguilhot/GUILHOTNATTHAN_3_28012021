@@ -1,6 +1,24 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
 }
 h1 {
     font-family: Shrikhand, Arial, Helvetica, sans-serif ;
+}
+h2 {
+    font-weight: bold;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    &:visited {
+        color: black;
+    }
 }
