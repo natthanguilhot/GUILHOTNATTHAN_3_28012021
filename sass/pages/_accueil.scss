@@ -1,4 +1,5 @@
 .search {
+    z-index: 10;
     width: 100%;
     height: 3.5rem;
     display: flex;
@@ -35,22 +36,6 @@
             color: rgb(175, 170, 170);
             margin-top: -0rem;
         }
-        &__bouton {
-            margin-top: 1.5rem;
-            margin-bottom: 3rem;
-            height: 3rem;
-            font-size: 0.95rem;
-            width: 70%;
-            border-radius: 5rem;
-            background: linear-gradient(to top left, $primary-color, $secondary-color);
-            color: white;
-            border: none;
-            cursor: pointer;
-            box-shadow: 1px 1px 5px gray;
-            &:active {
-                background: linear-gradient(to top left, darken($primary-color, 10), darken($secondary-color, 10));
-            }
-        }
     }
 }
 .fonctionnement {
@@ -72,11 +57,20 @@
         background-color: rgb(238, 238, 238);
         align-items: center;
         box-shadow: 1px 2px 15px rgb(211, 211, 211);
+        &:hover {
+            background-color: lighten($primary-color, 35);
+            >.fonctionnement__carte__icone {
+                color: $primary-color;
+            }
+        }
+        &:active {
+            background-color: lighten($primary-color, 35);
+        }
         &__numéro {
             background-color: $primary-color;
             color: white;
             width: 1.5em;
-            height: 1.5rem;
+            height: 1.7rem;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -99,7 +93,7 @@
     background-color: rgb(238, 238, 238);
     padding-top: 2.5rem;
     height: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     &__titre {
         margin-left: 1rem;
         margin-bottom: 1rem;
@@ -150,7 +144,7 @@
                     margin-bottom: 0.2rem;
                 }
                 &__place {
-
+                    color: $font-gris;
                 }
             }
             &__coeur {
