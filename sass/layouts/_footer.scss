@@ -17,6 +17,12 @@
         margin-left: 1rem;
         &__li{
             margin: 0.5rem 0 0.5rem 0;
+            & a {
+                color: white;
+                &:visited {
+                    color: white;
+                }
+            }
             &__icone {
                 width: 1rem;
                 margin-right: 0.5rem;

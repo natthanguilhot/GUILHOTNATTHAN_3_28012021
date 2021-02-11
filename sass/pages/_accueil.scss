@@ -155,9 +155,11 @@
                 margin-top: 0.5rem;
                 right: 1rem;
                 z-index: 50;
-                &:hover + &__coeurplein {
+                &:hover {
+                    & .restaurants__carte__description__coeurplein {
                     color: $primary-color;
                     opacity: 1;
+                    }
                 }
             }
             &__coeurplein {
@@ -167,6 +169,7 @@
                 margin-top: 0.5rem;
                 right: 1rem;
                 color: $primary-color;
+                transition: opacity 250ms;
             }
         }
     }

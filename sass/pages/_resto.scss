@@ -22,6 +22,7 @@
         }
         &__coeur {
             font-size: 1.5rem;
+            margin-top: 1rem;
         }    
     }
     &__plat {
@@ -41,6 +42,7 @@
             }
             &__plat {
                 background-color: white;
+                width: 80%;
                 border-radius: 1rem;
                 box-shadow: 2px 2px 10px rgb(160, 160, 160);
                 padding: 0.7rem;
@@ -49,14 +51,14 @@
                 justify-content: space-between;
                 position: relative;
                 margin: 1rem 0 1rem 0;
+                overflow: hidden;
+                font-size: 0.8rem;
                 /* &__titre {
                 } */
                 &__description{
+                    color: $font-gris;
                 }
                 &__prix {
-                    position: absolute;
-                    bottom: 0.5rem;
-                    right: 2rem;
                     font-weight: bold;
                 }
             }
