@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
     "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/natthanguilhot/GUILHOTNATTHAN_3_28012021.git"

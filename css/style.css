@@ -24,6 +24,7 @@ li {
 
 a {
   text-decoration: none;
+  color: black;
 }
 a:visited {
   color: black;
@@ -56,16 +57,21 @@ a:visited {
 }
 
 .footer {
-  padding: 1rem 0 2rem 1rem;
   background-color: #323232;
   color: white;
   width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .footer__titre {
+  margin-left: 1rem;
   font-size: 120%;
   font-weight: 100;
   margin-bottom: 1rem;
   font-family: Shrikhand, Arial, Helvetica, sans-serif;
+}
+.footer__ul {
+  margin-left: 1rem;
 }
 .footer__ul__li {
   margin: 0.5rem 0 0.5rem 0;
@@ -229,6 +235,65 @@ a:visited {
 }
 .restaurants__carte__description__coeur:hover {
   color: #df5dc9;
+}
+
+.entete__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carte {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.carte__nomresto {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.carte__nomresto__titre {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+.carte__nomresto__coeur {
+  font-size: 1.5rem;
+}
+.carte__plat {
+  margin: auto;
+  margin-left: 1rem;
+  padding-right: 1rem;
+}
+.carte__plat__entrées {
+  margin-top: 2rem;
+}
+.carte__plat__entrées__titre {
+  font-weight: lighter;
+}
+.carte__plat__entrées__bar {
+  background-color: #99E2D0;
+  height: 0.2rem;
+  width: 4rem;
+}
+.carte__plat__entrées__plat {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #a0a0a0;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 1rem 0 1rem 0;
+}
+.carte__plat__entrées__plat__prix {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 2rem;
+  font-weight: bold;
 }
 
 .bouton {

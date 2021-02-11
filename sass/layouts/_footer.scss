@@ -1,17 +1,20 @@
 @import "./../utils/variables";
 
 .footer {
-    padding: 1rem 0 2rem 1rem;
     background-color: $bg-footer;
     color: white;
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     &__titre {
+        margin-left: 1rem;
         font-size: 120%;
         font-weight:100;
         margin-bottom: 1rem;
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
     }
     &__ul{
+        margin-left: 1rem;
         &__li{
             margin: 0.5rem 0 0.5rem 0;
             &__icone {

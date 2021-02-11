@@ -1,0 +1,63 @@
+.entete {
+    &__image {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.carte {
+    width: 100%;
+    background-color: $bg-gris;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    &__nomresto {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        &__titre {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            margin-right: 3rem;
+            margin-top: 1rem;
+        }
+        &__coeur {
+            font-size: 1.5rem;
+        }    
+    }
+    &__plat {
+        margin: auto;
+        margin-left: 1rem;
+        padding-right: 1rem;
+        &__entrées {
+            margin-top: 2rem;
+            &__titre {
+                font-weight: lighter;
+            }
+            &__bar{
+                background-color: $tertiary-color;
+                height: 0.2rem;
+                width: 4rem;
+            }
+            &__plat {
+                background-color: white;
+                border-radius: 1rem;
+                box-shadow: 2px 2px 10px rgb(160, 160, 160);
+                padding: 0.7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                margin: 1rem 0 1rem 0;
+                &__titre {
+                }
+                &__description{
+                }
+                &__prix {
+                    position: absolute;
+                    bottom: 0.5rem;
+                    right: 2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
