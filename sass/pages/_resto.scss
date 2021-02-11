@@ -2,6 +2,7 @@
     &__image {
         width: 100%;
         object-fit: cover;
+        max-height: 17rem;
     }
 }
 .carte {
@@ -15,6 +16,7 @@
         align-items: center;
         margin-left: 1rem;
         &__titre {
+            font-size: 1.5rem;
             padding-top: 1.5rem;
             padding-bottom: 1.5rem;
             margin-right: 3rem;
@@ -29,7 +31,7 @@
         margin: auto;
         margin-left: 1rem;
         padding-right: 1rem;
-        &__entrées {
+        &__type {
             margin-top: 2rem;
             margin-bottom: 3rem;
             &__titre {
@@ -40,28 +42,35 @@
                 height: 0.2rem;
                 width: 4rem;
             }
-            &__plat {
-                background-color: white;
-                width: 80%;
-                border-radius: 1rem;
-                box-shadow: 2px 2px 10px rgb(160, 160, 160);
-                padding: 0.7rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                position: relative;
-                margin: 1rem 0 1rem 0;
-                overflow: hidden;
-                font-size: 0.8rem;
-                /* &__titre {
-                } */
-                &__description{
-                    color: $font-gris;
-                }
-                &__prix {
-                    font-weight: bold;
-                }
-            }
+           
         }
+    }
+}
+.plat {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px rgb(160, 160, 160);
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 1rem 0 1rem 0;
+    overflow: hidden;
+    font-size: 0.8rem;
+    &__description {
+        text-overflow: ellipsis;
+        border: 1px solid;
+        &__titre{
+            font-weight: bold;
+        }
+        &__info {
+            color: $font-gris;
+        }
+    }
+    &__prix {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        margin-right: 1rem;
     }
 }

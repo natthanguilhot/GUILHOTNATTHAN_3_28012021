@@ -264,6 +264,7 @@ a:visited {
 .entete__image {
   width: 100%;
   object-fit: cover;
+  max-height: 17rem;
 }
 
 .carte {
@@ -279,6 +280,7 @@ a:visited {
   margin-left: 1rem;
 }
 .carte__nomresto__titre {
+  font-size: 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   margin-right: 3rem;
@@ -293,39 +295,46 @@ a:visited {
   margin-left: 1rem;
   padding-right: 1rem;
 }
-.carte__plat__entrées {
+.carte__plat__type {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-.carte__plat__entrées__titre {
+.carte__plat__type__titre {
   font-weight: lighter;
 }
-.carte__plat__entrées__bar {
+.carte__plat__type__bar {
   background-color: #99E2D0;
   height: 0.2rem;
   width: 4rem;
 }
-.carte__plat__entrées__plat {
+
+.plat {
   background-color: white;
-  width: 80%;
   border-radius: 1rem;
   box-shadow: 2px 2px 10px #a0a0a0;
   padding: 0.7rem;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   position: relative;
   margin: 1rem 0 1rem 0;
   overflow: hidden;
   font-size: 0.8rem;
-  /* &__titre {
-  } */
 }
-.carte__plat__entrées__plat__description {
+.plat__description {
+  text-overflow: ellipsis;
+  border: 1px solid;
+}
+.plat__description__titre {
+  font-weight: bold;
+}
+.plat__description__info {
   color: #6e6e6e;
 }
-.carte__plat__entrées__plat__prix {
+.plat__prix {
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 1rem;
 }
 
 .bouton {
