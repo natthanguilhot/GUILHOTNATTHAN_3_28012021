@@ -16,7 +16,7 @@
         align-items: center;
         margin-left: 1rem;
         &__titre {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             padding-top: 1.5rem;
             padding-bottom: 1.5rem;
             margin-right: 3rem;
@@ -36,6 +36,7 @@
             margin-bottom: 3rem;
             &__titre {
                 font-weight: lighter;
+                font-size: 1.4rem;
             }
             &__bar{
                 background-color: $tertiary-color;
@@ -56,10 +57,9 @@
     position: relative;
     margin: 1rem 0 1rem 0;
     overflow: hidden;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     &__description {
         text-overflow: ellipsis;
-        border: 1px solid;
         &__titre{
             font-weight: bold;
         }
