@@ -297,6 +297,10 @@ a:visited {
 }
 
 .bouton {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   height: 3rem;
@@ -305,8 +309,8 @@ a:visited {
   border-radius: 5rem;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
-  border: none;
   cursor: pointer;
+  border: none;
   box-shadow: 1px 1px 5px gray;
 }
 .bouton:active {
