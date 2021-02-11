@@ -9,6 +9,7 @@
     background-color: $bg-gris;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
+    padding-bottom: 3rem;
     &__nomresto {
         display: flex;
         align-items: center;
@@ -29,6 +30,7 @@
         padding-right: 1rem;
         &__entrées {
             margin-top: 2rem;
+            margin-bottom: 3rem;
             &__titre {
                 font-weight: lighter;
             }
@@ -47,8 +49,8 @@
                 justify-content: space-between;
                 position: relative;
                 margin: 1rem 0 1rem 0;
-                &__titre {
-                }
+                /* &__titre {
+                } */
                 &__description{
                 }
                 &__prix {

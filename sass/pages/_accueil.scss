@@ -139,7 +139,9 @@
             margin-top: -0.3rem;
             border-bottom-left-radius: 1rem;
             border-bottom-right-radius: 1rem;
+            position: relative;
             &__texte {
+                width: 150%;
                 &__titre {
                     margin-bottom: 0.2rem;
                 }
@@ -148,10 +150,23 @@
                 }
             }
             &__coeur {
-                font-size: 1.5rem;
-                &:hover {
-                    color: rgb(223, 93, 201);
+                position: absolute;
+                font-size: 1.7rem;
+                margin-top: 0.5rem;
+                right: 1rem;
+                z-index: 50;
+                &:hover + &__coeurplein {
+                    color: $primary-color;
+                    opacity: 1;
                 }
+            }
+            &__coeurplein {
+                opacity: 0;
+                position: absolute;
+                font-size: 1.7rem;
+                margin-top: 0.5rem;
+                right: 1rem;
+                color: $primary-color;
             }
         }
     }
