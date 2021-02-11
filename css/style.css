@@ -322,8 +322,9 @@ a:visited {
   overflow: hidden;
   font-size: 0.9rem;
 }
-.plat:hover {
+.plat:hover + .plat__prix {
   cursor: pointer;
+  transform: translateX(4rem);
 }
 .plat__description {
   margin: 1rem 0 1rem 1rem;
@@ -345,9 +346,12 @@ a:visited {
   display: flex;
   align-items: flex-end;
   margin-right: 1rem;
+  margin-top: 2rem;
   width: 10%;
   height: auto;
   transform-origin: right;
+  transform: translateX(-4rem);
+  transition: transform 1s 0s ease-in-out;
 }
 
 .ajoutplat {
@@ -358,10 +362,8 @@ a:visited {
   max-width: 4rem;
   height: 100%;
   background-color: #99E2D0;
-  transform: scalex(0.9);
+  transform: scalex(0);
   transform-origin: right;
-}
-.ajoutplat i {
   color: white;
 }
 
