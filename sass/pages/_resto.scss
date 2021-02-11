@@ -48,18 +48,28 @@
     }
 }
 .plat {
+    height: 5rem;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px rgb(160, 160, 160);
-    padding: 0.7rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     margin: 1rem 0 1rem 0;
     overflow: hidden;
     font-size: 0.9rem;
+    &:hover {
+        cursor: pointer;
+    }
     &__description {
+        margin: 1rem 0 1rem 1rem;
         text-overflow: ellipsis;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60%;
+        width: 70%;
         &__titre{
             font-weight: bold;
         }
@@ -72,5 +82,22 @@
         display: flex;
         align-items: flex-end;
         margin-right: 1rem;
+        width: 10%;
+        height: auto;
+        transform-origin: right;
+    }
+}
+.ajoutplat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    max-width: 4rem;
+    height: 100%;
+    background-color: $tertiary-color;
+    transform: scalex(0.9);
+    transform-origin: right;
+    & i {
+        color: white;
     }
 }

@@ -14,6 +14,9 @@
     cursor: pointer;
     border: none;
     box-shadow: 1px 1px 5px gray;
+    & a {
+        
+    }
     &:active {
         background: linear-gradient(to top left, lighten($primary-color, 5), lighten($secondary-color, 5));
         box-shadow: 3px 3px 5px gray;
