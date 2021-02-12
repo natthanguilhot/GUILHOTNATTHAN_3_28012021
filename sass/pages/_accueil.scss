@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(223, 223, 223);
+    box-shadow: inset 5px 5px 5px gray;
     &__logo {
         margin-right: 1rem;
     }
@@ -156,10 +157,10 @@
                 right: 1rem;
                 z-index: 50;
                 &:hover {
-                    & .restaurants__carte__description__coeurplein {
-                    color: $primary-color;
+                    opacity: 0;
+                }
+                &:hover + .restaurants__carte__description__coeurplein {
                     opacity: 1;
-                    }
                 }
             }
             &__coeurplein {

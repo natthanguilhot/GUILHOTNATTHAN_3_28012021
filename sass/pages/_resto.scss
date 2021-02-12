@@ -66,16 +66,24 @@
     &__description {
         margin: 1rem 0 1rem 1rem;
         text-overflow: ellipsis;
+        text-overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 60%;
         width: 70%;
+        border: 1px solid;
         &__titre{
             font-weight: bold;
+            overflow: hidden;
         }
         &__info {
             color: $font-gris;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 80%;
+            border: 1px solid;
+            white-space: nowrap;
         }
     }
     &__prix {
@@ -99,7 +107,7 @@
     max-width: 4rem;
     height: 100%;
     background-color: $tertiary-color;
-    transform: scalex(0);
+    transform: scalex(1);
     transform-origin: right;
     color: white;
 }
