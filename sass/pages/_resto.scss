@@ -84,7 +84,6 @@
     font-size: 0.9rem;
     &:hover + &__prix {
         cursor: pointer;
-            transform: translateX(4rem);
     }
     &__description {
         margin: 1rem 0 1rem 1rem;
@@ -95,7 +94,6 @@
         justify-content: space-between;
         height: 60%;
         width: 70%;
-        border: 1px solid;
         &__titre{
             font-weight: bold;
             overflow: hidden;
@@ -105,7 +103,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
             width: 80%;
-            border: 1px solid;
             white-space: nowrap;
         }
     }
@@ -118,8 +115,6 @@
         width: 10%;
         height: auto;
         transform-origin: right;
-        transform: translateX(-4rem);
-        transition: transform 1s 0s ease-in-out;
     }
 }
 .ajoutplat {
@@ -130,7 +125,7 @@
     max-width: 4rem;
     height: 100%;
     background-color: $tertiary-color;
-    transform: scalex(1);
+    transform: scalex(0);
     transform-origin: right;
     color: white;
 }
