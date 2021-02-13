@@ -277,6 +277,8 @@ a:visited {
 .carte {
   width: 100%;
   background-color: #f6f6f6;
+  position: relative;
+  top: -3rem;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   padding-bottom: 3rem;
@@ -294,8 +296,29 @@ a:visited {
   margin-top: 1rem;
 }
 .carte__nomresto__coeur {
-  font-size: 1.5rem;
-  margin-top: 1rem;
+  position: absolute;
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+  right: 1rem;
+  z-index: 50;
+}
+.carte__nomresto__coeur:hover {
+  opacity: 0;
+}
+.carte__nomresto__coeur:hover + .carte__nomresto__coeurplein {
+  opacity: 1;
+}
+.carte__nomresto__coeurplein {
+  opacity: 0;
+  position: absolute;
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+  right: 1rem;
+  color: gradient(to bottom, #9356DC, #FF79DA);
+  transition: opacity 250ms;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .carte__plat {
   margin: auto;
