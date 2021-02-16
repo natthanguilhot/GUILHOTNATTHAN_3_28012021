@@ -97,12 +97,15 @@
         &__titre{
             font-weight: bold;
             overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: auto;
         }
         &__info {
             color: $font-gris;
             overflow: hidden;
             text-overflow: ellipsis;
-            width: 80%;
+            width: auto;
             white-space: nowrap;
         }
     }
@@ -129,3 +132,33 @@
     transform-origin: right;
     color: white;
 }
+.transitiontopY {
+    animation: transitiontopY 0.9s;
+    transform-origin: bottom;
+    transition-timing-function: cubic-bezier(1,0,0,1);
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes transitiontopY {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    80% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+  }
+  
