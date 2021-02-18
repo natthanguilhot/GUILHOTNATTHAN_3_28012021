@@ -305,9 +305,13 @@ a:visited {
 }
 .restaurants__carte__description__coeur:hover {
   opacity: 0;
+  transition: opacity 0.3s;
+  transform-origin: bottom;
 }
 .restaurants__carte__description__coeur:hover + .restaurants__carte__description__coeurplein {
   opacity: 1;
+  transition: opacity 1s;
+  transform-origin: bottom;
 }
 .restaurants__carte__description__coeurplein {
   opacity: 0;
