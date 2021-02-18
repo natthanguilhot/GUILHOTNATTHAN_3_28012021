@@ -361,12 +361,12 @@ a:visited {
   transform: translateX(-4rem);
   transition: transform 1s;
 }
-.plat:hover > .ajoutplat__check {
+.plat:hover > .ajoutplat > .ajoutplat__check {
   transform: rotate(1turn);
-  transition: transform 2s;
+  transition: transform 0.8s;
 }
 .plat:hover > .plat__prix {
-  transform: translateX(-4rem);
+  transform: translateX(-3rem);
   transition: transform 1s;
 }
 .plat:hover > .plat__description {
@@ -433,26 +433,94 @@ a:visited {
 
 @keyframes transitiontopY {
   0% {
-    transform: translateY(3rem);
+    transform: translateY(1rem);
     opacity: 0;
-  }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  80% {
-    opacity: 0.6;
-  }
-  90% {
-    opacity: 0.9;
   }
   100% {
     transform: translateY(0rem);
     opacity: 1;
   }
 }
+.transitiontopY1 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.15s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY2 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.3s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY3 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.45s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY4 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.6s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY5 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.75s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY6 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.9s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY7 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.05s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY8 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.2s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY9 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.35s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY10 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.5s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
 .bouton {
   display: flex;
   margin: auto;
