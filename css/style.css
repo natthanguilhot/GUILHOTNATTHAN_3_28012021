@@ -107,7 +107,7 @@ a:visited {
   height: 3rem;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
   animation: loader 0.8s backwards infinite;
 }
 .loading__spinner2 {
@@ -116,7 +116,7 @@ a:visited {
   height: 3rem;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
   animation: loader 0.8s 0.4s backwards infinite;
 }
 
