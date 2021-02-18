@@ -362,9 +362,13 @@ a:visited {
 }
 .carte__nomresto__coeur:hover {
   opacity: 0;
+  transition: opacity 0.3s;
+  transform-origin: bottom;
 }
 .carte__nomresto__coeur:hover + .carte__nomresto__coeurplein {
   opacity: 1;
+  transition: opacity 1s;
+  transform-origin: bottom;
 }
 .carte__nomresto__coeurplein {
   opacity: 0;
