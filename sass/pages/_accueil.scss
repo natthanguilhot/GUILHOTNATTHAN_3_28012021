@@ -166,6 +166,16 @@
                     transition: opacity 1s;
                     transform-origin: bottom;
                 }
+                &:active {
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    transform-origin: bottom;
+                }
+                &:active + .restaurants__carte__description__coeurplein {
+                    opacity: 1;
+                    transition: opacity 1s;
+                    transform-origin: bottom;
+                }
             }
             &__coeurplein {
                 opacity: 0;
