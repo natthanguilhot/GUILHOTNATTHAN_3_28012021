@@ -6,6 +6,7 @@
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: -3rem; /* Pour compenser la position relative de la page de -3rem */
     &__titre {
         margin-left: 1rem;
         font-size: 120%;

@@ -63,6 +63,8 @@ a:visited {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-top: -3rem;
+  /* Pour compenser la position relative de la page de -3rem */
 }
 .footer__titre {
   margin-left: 1rem;
@@ -352,8 +354,26 @@ a:visited {
   overflow: hidden;
   font-size: 0.9rem;
 }
-.plat:hover + .plat__prix {
+.plat:hover {
   cursor: pointer;
+}
+.plat:hover > .ajoutplat {
+  transform: translateX(-4rem);
+  transition: transform 1s;
+}
+.plat:hover > .ajoutplat__check {
+  transform: rotate(1turn);
+  transition: transform 2s;
+}
+.plat:hover > .plat__prix {
+  transform: translateX(-4rem);
+  transition: transform 1s;
+}
+.plat:hover > .plat__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 55%;
 }
 .plat__description {
   margin: 1rem 0 1rem 1rem;
@@ -362,14 +382,15 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60%;
-  width: 70%;
+  height: auto;
+  width: auto;
+  max-width: 70%;
 }
 .plat__description__titre {
   font-weight: bold;
-  overflow: hidden;
+  /* overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap; */
   width: auto;
 }
 .plat__description__info {
@@ -391,14 +412,14 @@ a:visited {
 }
 
 .ajoutplat {
+  position: absolute;
+  right: -4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  max-width: 4rem;
+  width: 4rem;
   height: 100%;
   background-color: #99E2D0;
-  transform: scalex(0);
   transform-origin: right;
   color: white;
 }
