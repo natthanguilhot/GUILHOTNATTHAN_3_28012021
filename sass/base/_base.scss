@@ -8,6 +8,11 @@ body {
     font-size: 1.1rem;
     width: 100%;
     margin: auto;
+    @media (min-width: 1024px) {
+        max-width: 1200px;
+        width: 70%;
+        margin: auto;
+    }        
 }
 h1 {
     font-family: Shrikhand, Arial, Helvetica, sans-serif ;

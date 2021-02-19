@@ -37,7 +37,7 @@
         }
             &:hover + .carte__nomresto__coeurplein {
                 opacity: 1;
-                transition: opacity 1s;
+                transition: opacity 0.8s;
                 transform-origin: bottom;
             }
             &:active {
@@ -47,7 +47,7 @@
         }
             &:active + .carte__nomresto__coeurplein {
                 opacity: 1;
-                transition: opacity 1s;
+                transition: opacity 0.8s;
                 transform-origin: bottom;
             }
         }
@@ -68,10 +68,9 @@
         margin: auto;
         margin-left: 1rem;
         padding-right: 1rem;
-        border: 1px solid;
         @media (min-width: 1024px) {
             display: flex;
-            // align-items: center;
+            align-items: flex-start;
         }    
         &__type {
             margin-top: 2rem;
@@ -79,6 +78,7 @@
             @media (min-width: 1024px) {
                 width: 30%;
                 margin: auto;
+                margin-top: 0rem;
             }        
             &__titre {
                 font-weight: lighter;
@@ -123,7 +123,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            width:55%;
+            width:60%;
         }
     }
     &__description {
@@ -179,24 +179,41 @@
     transform-origin: bottom;
     transition-timing-function: cubic-bezier(1,0,0,1);
     animation-fill-mode: backwards;
-  }
+}
   
-  @keyframes transitiontopY {
+@keyframes transitiontopY {
+0% {
+    transform: translateY(1rem);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0rem);
+    opacity: 1;
+}
+}
+@for $i from 1 through 10 {
+.transitiontopY#{$i} {
+    animation: transitiontopY $transitiontopduration;
+    animation-delay: 0.15s*$i;
+    transform-origin: bottom;
+    transition-timing-function: cubic-bezier(1,0,0,1);
+    animation-fill-mode: backwards;
+    }    
+}
+@keyframes widthtext {
     0% {
-        transform: translateY(1rem);
-        opacity: 0;
+        width: 100%;
+    }
+    25% {
+        width: 85%;
+    }
+    50%{
+        width: 75%;
+    }
+    85%{
+        width: 65%;
     }
     100% {
-        transform: translateY(0rem);
-        opacity: 1;
+        width: 55%;
     }
-  }
-  @for $i from 1 through 10 {
-    .transitiontopY#{$i} {
-        animation: transitiontopY $transitiontopduration;
-        animation-delay: 0.15s*$i;
-        transform-origin: bottom;
-        transition-timing-function: cubic-bezier(1,0,0,1);
-        animation-fill-mode: backwards;
-      }    
-  }
+}

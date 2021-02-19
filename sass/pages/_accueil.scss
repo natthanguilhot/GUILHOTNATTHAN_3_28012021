@@ -186,7 +186,7 @@
                 }
                 &:hover + .restaurants__carte__description__coeurplein {
                     opacity: 1;
-                    transition: opacity 1s;
+                    transition: opacity 0.8s;
                     transform-origin: bottom;
                 }
                 &:active {
@@ -196,7 +196,7 @@
                 }
                 &:active + .restaurants__carte__description__coeurplein {
                     opacity: 1;
-                    transition: opacity 1s;
+                    transition: opacity 0.8s;
                     transform-origin: bottom;
                 }
             }

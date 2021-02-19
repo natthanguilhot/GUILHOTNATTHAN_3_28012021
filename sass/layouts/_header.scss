@@ -21,5 +21,8 @@
         position: absolute;
         top: 1.5rem;
         left: 1.5rem;
+        @media (min-width:1024px) {
+            left: 20%;
+        }
     }
 }
