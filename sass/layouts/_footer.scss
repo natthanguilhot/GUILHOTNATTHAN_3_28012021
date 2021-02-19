@@ -18,6 +18,9 @@
         margin-left: 1rem;
         &__li{
             margin: 0.5rem 0 0.5rem 0;
+            &:hover {
+                cursor: pointer;
+            }    
             & a {
                 color: white;
                 &:visited {

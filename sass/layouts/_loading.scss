@@ -7,14 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeout 0s 2.5s forwards;
+    animation: fadeout 0s 0.5s forwards;
     &__spinner {
         position: absolute;
         width: 3rem;
         height: 3rem;
         background-color: transparent;
         border-radius: 50%;
-        border: 2px solid black;
+        border: 2px solid $primary-color;
         animation: loader 0.8s backwards infinite;
     }
     &__spinner2 {
@@ -23,7 +23,7 @@
         height: 3rem;
         background-color: transparent;
         border-radius: 50%;
-        border: 2px solid black;
+        border: 2px solid $secondary-color;
         animation: loader 0.8s 0.4s backwards infinite;
     }
 }

@@ -8,6 +8,7 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   width: 100%;
+  margin: auto;
 }
 
 h1 {
@@ -78,6 +79,9 @@ a:visited {
 .footer__ul__li {
   margin: 0.5rem 0 0.5rem 0;
 }
+.footer__ul__li:hover {
+  cursor: pointer;
+}
 .footer__ul__li a {
   color: white;
 }
@@ -99,7 +103,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeout 0s 2.5s forwards;
+  animation: fadeout 0s 0.5s forwards;
 }
 .loading__spinner {
   position: absolute;
@@ -107,7 +111,7 @@ a:visited {
   height: 3rem;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #9356DC;
   animation: loader 0.8s backwards infinite;
 }
 .loading__spinner2 {
@@ -116,7 +120,7 @@ a:visited {
   height: 3rem;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #FF79DA;
   animation: loader 0.8s 0.4s backwards infinite;
 }
 
@@ -191,6 +195,16 @@ a:visited {
   width: 90%;
   margin: auto;
 }
+@media (min-width: 1024px) {
+  .fonctionnement {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement__all {
+    display: flex;
+  }
+}
 .fonctionnement__titre {
   margin-left: 1rem;
   margin-top: 3rem;
@@ -206,6 +220,11 @@ a:visited {
   background-color: #eeeeee;
   align-items: center;
   box-shadow: 1px 2px 15px lightgray;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__carte {
+    width: 30%;
+  }
 }
 .fonctionnement__carte:hover {
   background-color: #f2eafb;
@@ -239,6 +258,13 @@ a:visited {
   height: auto;
   padding-bottom: 3rem;
 }
+@media (min-width: 1024px) {
+  .restaurants__all {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+}
 .restaurants__titre {
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -251,6 +277,13 @@ a:visited {
   position: relative;
   margin-bottom: 1.5rem;
   box-shadow: 5px 5px 5px #dbdbdb;
+}
+@media (min-width: 1024px) {
+  .restaurants__carte {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 }
 .restaurants__carte__nouveau {
   position: absolute;
@@ -313,6 +346,16 @@ a:visited {
   transition: opacity 1s;
   transform-origin: bottom;
 }
+.restaurants__carte__description__coeur:active {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transform-origin: bottom;
+}
+.restaurants__carte__description__coeur:active + .restaurants__carte__description__coeurplein {
+  opacity: 1;
+  transition: opacity 1s;
+  transform-origin: bottom;
+}
 .restaurants__carte__description__coeurplein {
   opacity: 0;
   position: absolute;
@@ -370,6 +413,16 @@ a:visited {
   transition: opacity 1s;
   transform-origin: bottom;
 }
+.carte__nomresto__coeur:active {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transform-origin: bottom;
+}
+.carte__nomresto__coeur:active + .carte__nomresto__coeurplein {
+  opacity: 1;
+  transition: opacity 1s;
+  transform-origin: bottom;
+}
 .carte__nomresto__coeurplein {
   opacity: 0;
   position: absolute;
@@ -386,10 +439,22 @@ a:visited {
   margin: auto;
   margin-left: 1rem;
   padding-right: 1rem;
+  border: 1px solid;
+}
+@media (min-width: 1024px) {
+  .carte__plat {
+    display: flex;
+  }
 }
 .carte__plat__type {
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+@media (min-width: 1024px) {
+  .carte__plat__type {
+    width: 30%;
+    margin: auto;
+  }
 }
 .carte__plat__type__titre {
   font-weight: lighter;

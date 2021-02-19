@@ -68,9 +68,18 @@
         margin: auto;
         margin-left: 1rem;
         padding-right: 1rem;
+        border: 1px solid;
+        @media (min-width: 1024px) {
+            display: flex;
+            // align-items: center;
+        }    
         &__type {
             margin-top: 2rem;
             margin-bottom: 3rem;
+            @media (min-width: 1024px) {
+                width: 30%;
+                margin: auto;
+            }        
             &__titre {
                 font-weight: lighter;
                 font-size: 1.4rem;

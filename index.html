@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/prefixed/style.css">
+    <!-- <link rel="stylesheet" href="css/prefixed/style.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d4c8c8f50d.js" crossorigin="anonymous"></script>
@@ -38,79 +38,83 @@
 
     <section class="fonctionnement">
         <h2 class="fonctionnement__titre">Fonctionnement</h2>
-        <div class="fonctionnement__carte">
-            <p class="fonctionnement__carte__numéro">1</p><i class="fas fa-mobile-alt fonctionnement__carte__icone"></i><p class="fonctionnement__carte__description">Choisissez un restaurant</p>
-        </div>
-        <div class="fonctionnement__carte">
-            <p class="fonctionnement__carte__numéro">2</p> <!-- <i class="fas fa-ellipsis-v fonctionnement__carte__icone"></i> deux icone point a la vertical--><i class="fas fa-bars fonctionnement__carte__icone"></i><p class="fonctionnement__carte__description">Composez votre menu</p>
-        </div>
-        <div class="fonctionnement__carte">
-            <p class="fonctionnement__carte__numéro">3</p><i class="fas fa-store fonctionnement__carte__icone"></i><p class="fonctionnement__carte__description">Dégustez au restaurant</p>
+        <div class="fonctionnement__all">
+            <div class="fonctionnement__carte">
+                <p class="fonctionnement__carte__numéro">1</p><i class="fas fa-mobile-alt fonctionnement__carte__icone"></i><p class="fonctionnement__carte__description">Choisissez un restaurant</p>
+            </div>
+            <div class="fonctionnement__carte">
+                <p class="fonctionnement__carte__numéro">2</p> <!-- <i class="fas fa-ellipsis-v fonctionnement__carte__icone"></i> deux icone point a la vertical--><i class="fas fa-bars fonctionnement__carte__icone"></i><p class="fonctionnement__carte__description">Composez votre menu</p>
+            </div>
+            <div class="fonctionnement__carte">
+                <p class="fonctionnement__carte__numéro">3</p><i class="fas fa-store fonctionnement__carte__icone"></i><p class="fonctionnement__carte__description">Dégustez au restaurant</p>
+            </div>
         </div>
     </section>
 
     <main class="restaurants">
         <h2 class="restaurants__titre">Restaurants</h2>
-        <div class="restaurants__carte">
-            <a href="./html/palette.html">
-                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/palette.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
-            </a>
-            <div class="restaurants__carte__description">
+        <div class="restaurants__all">
+            <div class="restaurants__carte">
                 <a href="./html/palette.html">
-                <div class="restaurants__carte__description__texte">
-                    <h3 class="restaurants__carte__description__texte__titre">La palette du goût</h3>
-                    <p class="restaurants__carte__description__texte__place">Ménilmontant</p>
-                </div>
+                    <img src="./Documentation/MaquettesOhmyfood/images/restaurants/palette.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
                 </a>
-                <i class="far fa-heart restaurants__carte__description__coeur"></i>
-                <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
+                <div class="restaurants__carte__description">
+                    <a href="./html/palette.html">
+                    <div class="restaurants__carte__description__texte">
+                        <h3 class="restaurants__carte__description__texte__titre">La palette du goût</h3>
+                        <p class="restaurants__carte__description__texte__place">Ménilmontant</p>
+                    </div>
+                    </a>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                    <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
+                </div>
+                <p class="restaurants__carte__nouveau">Nouveau</p>
             </div>
-            <p class="restaurants__carte__nouveau">Nouveau</p>
-        </div>
-        <div class="restaurants__carte">
-            <a href="./html/note.html">
-                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/note.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
-            </a>
-            <div class="restaurants__carte__description">
+            <div class="restaurants__carte">
                 <a href="./html/note.html">
-                    <div class="restaurants__carte__description__texte">
-                        <h3 class="restaurants__carte__description__texte__titre">La note enchantée</h3>
-                        <p class="restaurants__carte__description__texte__place">Charonne</p>
-                    </div>
+                    <img src="./Documentation/MaquettesOhmyfood/images/restaurants/note.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
                 </a>
-                <i class="far fa-heart restaurants__carte__description__coeur"></i>
-                <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
-            </div>
-            <p class="restaurants__carte__nouveau">Nouveau</p>
-        </div>
-        <div class="restaurants__carte">
-            <a href="./html/francaise.html">
-                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/francaise.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
-            </a>
-            <div class="restaurants__carte__description">
-                <a href="./html/francaise.html">
-                    <div class="restaurants__carte__description__texte">
-                        <h3 class="restaurants__carte__description__texte__titre">A la française</h3>
-                        <p class="restaurants__carte__description__texte__place">Cité Rouge</p>
-                    </div>
-                </a>
-                <i class="far fa-heart restaurants__carte__description__coeur"></i>
-                <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
-            </div>
-        </div>
-        <div class="restaurants__carte">
-            <a href="./html/delice.html">
-            <img src="./Documentation/MaquettesOhmyfood/images/restaurants/delice.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
-            </a>
-            <div class="restaurants__carte__description">
-                <a href="./html/delice.html">
-                <div class="restaurants__carte__description__texte">
-                    <h3 class="restaurants__carte__description__texte__titre">Les délices des sens</h3>
-                    <p class="restaurants__carte__description__texte__place">Folie-Méricourt</p>
+                <div class="restaurants__carte__description">
+                    <a href="./html/note.html">
+                        <div class="restaurants__carte__description__texte">
+                            <h3 class="restaurants__carte__description__texte__titre">La note enchantée</h3>
+                            <p class="restaurants__carte__description__texte__place">Charonne</p>
+                        </div>
+                    </a>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                    <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
                 </div>
+                <p class="restaurants__carte__nouveau">Nouveau</p>
+            </div>
+            <div class="restaurants__carte">
+                <a href="./html/francaise.html">
+                    <img src="./Documentation/MaquettesOhmyfood/images/restaurants/francaise.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
                 </a>
-                <i class="far fa-heart restaurants__carte__description__coeur"></i>
-                <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
+                <div class="restaurants__carte__description">
+                    <a href="./html/francaise.html">
+                        <div class="restaurants__carte__description__texte">
+                            <h3 class="restaurants__carte__description__texte__titre">A la française</h3>
+                            <p class="restaurants__carte__description__texte__place">Cité Rouge</p>
+                        </div>
+                    </a>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                    <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
+                </div>
+            </div>
+            <div class="restaurants__carte">
+                <a href="./html/delice.html">
+                <img src="./Documentation/MaquettesOhmyfood/images/restaurants/delice.jpg" alt="Photo du restaurant La palette du gout" class="restaurants__carte__image">
+                </a>
+                <div class="restaurants__carte__description">
+                    <a href="./html/delice.html">
+                    <div class="restaurants__carte__description__texte">
+                        <h3 class="restaurants__carte__description__texte__titre">Les délices des sens</h3>
+                        <p class="restaurants__carte__description__texte__place">Folie-Méricourt</p>
+                    </div>
+                    </a>
+                    <i class="far fa-heart restaurants__carte__description__coeur"></i>
+                    <i class="fas fa-heart restaurants__carte__description__coeurplein"></i>
+                </div>
             </div>
         </div>
     </main>
