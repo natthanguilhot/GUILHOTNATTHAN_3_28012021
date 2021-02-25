@@ -123,7 +123,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            width:60%;
+            animation: widthtext 1s forwards;
         }
     }
     &__description {
@@ -137,9 +137,10 @@
         max-width: 70%;
         &__titre{
             font-weight: bold;
-            /* overflow: hidden;
+            overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap; */
+            width: auto;
+            white-space: nowrap;
             width: auto;
         }
         &__info {
@@ -213,6 +214,6 @@
         width: 65%;
     }
     100% {
-        width: 55%;
+        width: 60%;
     }
 }
