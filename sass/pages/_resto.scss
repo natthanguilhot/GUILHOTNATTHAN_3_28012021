@@ -190,29 +190,29 @@
     opacity: 1;
 }
 }
-// @for $i from 1 through 10 {
-// .transitiontopY#{$i} {
-//     animation: transitiontopY $transitiontopduration;
-//     animation-delay: 0.15s*$i;
-//     transform-origin: bottom;
-//     transition-timing-function: cubic-bezier(1,0,0,1);
-//     animation-fill-mode: backwards;
-//     }    
-// }
-// @keyframes widthtext {
-//     0% {
-//         width: 100%;
-//     }
-//     25% {
-//         width: 85%;
-//     }
-//     50%{
-//         width: 75%;
-//     }
-//     85%{
-//         width: 65%;
-//     }
-//     100% {
-//         width: 55%;
-//     }
-// }
+@for $i from 1 through 10 {
+.transitiontopY#{$i} {
+    animation: transitiontopY $transitiontopduration;
+    animation-delay: 0.15s*$i;
+    transform-origin: bottom;
+    transition-timing-function: cubic-bezier(1,0,0,1);
+    animation-fill-mode: backwards;
+    }    
+}
+@keyframes widthtext {
+    0% {
+        width: 100%;
+    }
+    25% {
+        width: 85%;
+    }
+    50%{
+        width: 75%;
+    }
+    85%{
+        width: 65%;
+    }
+    100% {
+        width: 55%;
+    }
+}

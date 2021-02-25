@@ -592,6 +592,103 @@ a:visited {
     opacity: 1;
   }
 }
+.transitiontopY1 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.15s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY2 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.3s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY3 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.45s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY4 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.6s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY5 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.75s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY6 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 0.9s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY7 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.05s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY8 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.2s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY9 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.35s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+.transitiontopY10 {
+  animation: transitiontopY 0.7s;
+  animation-delay: 1.5s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: backwards;
+}
+
+@keyframes widthtext {
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 85%;
+  }
+  50% {
+    width: 75%;
+  }
+  85% {
+    width: 65%;
+  }
+  100% {
+    width: 55%;
+  }
+}
 .bouton {
   display: flex;
   margin: auto;
