@@ -124,6 +124,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             animation: widthtext 1s forwards;
+            animation-delay: -0.5s;
         }
     }
     &__description {
@@ -203,15 +204,6 @@
 @keyframes widthtext {
     0% {
         width: 100%;
-    }
-    25% {
-        width: 85%;
-    }
-    50%{
-        width: 75%;
-    }
-    85%{
-        width: 65%;
     }
     100% {
         width: 60%;
