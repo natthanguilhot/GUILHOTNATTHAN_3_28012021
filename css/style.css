@@ -455,7 +455,7 @@ a:visited {
   font-size: 1.7rem;
   margin-top: 0.5rem;
   right: 1rem;
-  color: gradient(to bottom, #9356DC, #FF79DA);
+  color: gradient(bottom, #9356DC, #FF79DA);
   transition: opacity 250ms;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -530,7 +530,6 @@ a:visited {
 .plat__description {
   margin: 1rem 0 1rem 1rem;
   text-overflow: ellipsis;
-  text-overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -591,103 +590,6 @@ a:visited {
   100% {
     transform: translateY(0rem);
     opacity: 1;
-  }
-}
-.transitiontopY1 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 0.15s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY2 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 0.3s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY3 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 0.45s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY4 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 0.6s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY5 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 0.75s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY6 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 0.9s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY7 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 1.05s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY8 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 1.2s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY9 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 1.35s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-.transitiontopY10 {
-  animation: transitiontopY 0.7s;
-  animation-delay: 1.5s;
-  transform-origin: bottom;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-fill-mode: backwards;
-}
-
-@keyframes widthtext {
-  0% {
-    width: 100%;
-  }
-  25% {
-    width: 85%;
-  }
-  50% {
-    width: 75%;
-  }
-  85% {
-    width: 65%;
-  }
-  100% {
-    width: 55%;
   }
 }
 .bouton {

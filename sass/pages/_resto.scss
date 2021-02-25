@@ -57,7 +57,7 @@
             font-size: 1.7rem;
             margin-top: 0.5rem;
             right: 1rem;
-            color: gradient(to bottom, $primary-color, $secondary-color);
+            color: gradient(bottom, $primary-color, $secondary-color);
             transition: opacity 250ms;
             background: -webkit-linear-gradient($primary-color, $secondary-color);
             -webkit-background-clip: text;
@@ -129,7 +129,6 @@
     &__description {
         margin: 1rem 0 1rem 1rem;
         text-overflow: ellipsis;
-        text-overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -191,29 +190,29 @@
     opacity: 1;
 }
 }
-@for $i from 1 through 10 {
-.transitiontopY#{$i} {
-    animation: transitiontopY $transitiontopduration;
-    animation-delay: 0.15s*$i;
-    transform-origin: bottom;
-    transition-timing-function: cubic-bezier(1,0,0,1);
-    animation-fill-mode: backwards;
-    }    
-}
-@keyframes widthtext {
-    0% {
-        width: 100%;
-    }
-    25% {
-        width: 85%;
-    }
-    50%{
-        width: 75%;
-    }
-    85%{
-        width: 65%;
-    }
-    100% {
-        width: 55%;
-    }
-}
+// @for $i from 1 through 10 {
+// .transitiontopY#{$i} {
+//     animation: transitiontopY $transitiontopduration;
+//     animation-delay: 0.15s*$i;
+//     transform-origin: bottom;
+//     transition-timing-function: cubic-bezier(1,0,0,1);
+//     animation-fill-mode: backwards;
+//     }    
+// }
+// @keyframes widthtext {
+//     0% {
+//         width: 100%;
+//     }
+//     25% {
+//         width: 85%;
+//     }
+//     50%{
+//         width: 75%;
+//     }
+//     85%{
+//         width: 65%;
+//     }
+//     100% {
+//         width: 55%;
+//     }
+// }
