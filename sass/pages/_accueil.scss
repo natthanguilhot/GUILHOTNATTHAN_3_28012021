@@ -207,7 +207,7 @@
                 margin-top: 0.5rem;
                 right: 1rem;
                 color: gradient($primary-color, $secondary-color);
-                transition: opacity 250ms forwards;
+                transition: opacity 250ms;
                 background: -webkit-linear-gradient($primary-color, $secondary-color);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

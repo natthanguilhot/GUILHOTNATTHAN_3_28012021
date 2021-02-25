@@ -389,7 +389,7 @@ a:visited {
   margin-top: 0.5rem;
   right: 1rem;
   color: gradient(#9356DC, #FF79DA);
-  transition: opacity 250ms forwards;
+  transition: opacity 250ms;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
