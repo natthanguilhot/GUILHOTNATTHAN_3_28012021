@@ -1,4 +1,3 @@
-@import "../utils/variables";
 .search {
     z-index: 10;
     width: 100%;
@@ -207,7 +206,7 @@
                 font-size: 1.7rem;
                 margin-top: 0.5rem;
                 right: 1rem;
-                color: gradient($primary-color, $secondary-color);
+                background: gradient($primary-color, $secondary-color);
                 transition: opacity 250ms;
                 background: -webkit-linear-gradient($primary-color, $secondary-color);
                 -webkit-background-clip: text;
