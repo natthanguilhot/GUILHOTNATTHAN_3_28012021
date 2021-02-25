@@ -206,7 +206,7 @@
                 font-size: 1.7rem;
                 margin-top: 0.5rem;
                 right: 1rem;
-                color: gradient(to bottom, $primary-color, $secondary-color);
+                color: gradient($primary-color, $secondary-color);
                 transition: opacity 250ms forwards;
                 background: -webkit-linear-gradient($primary-color, $secondary-color);
                 -webkit-background-clip: text;
